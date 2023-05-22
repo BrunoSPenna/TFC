@@ -1,5 +1,6 @@
 import * as express from 'express';
 import TeamRoutes from './database/router/TeamRoutes';
+import loginRoutes from './database/router/loginRoutes';
 
 class App {
   public app: express.Express;
@@ -15,7 +16,9 @@ class App {
   }
 
   private initRoutes(): void {
+    // console.log('oi');
     this.app.use(TeamRoutes);
+    this.app.use(loginRoutes);
   }
 
   private config():void {
