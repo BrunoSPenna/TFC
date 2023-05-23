@@ -2,7 +2,7 @@ import { Router, Request, Response } from 'express';
 import UsersController from '../controller/loginController';
 import UserService from '../service/loginService';
 import validateLogin from '../Interfaces/validation';
-import TokenAuthorization from '../utils/TokenAuth';
+import TokenAuthorization from '../utils/TokenAuthorization';
 
 const loginRoute = Router();
 const userService = new UserService();
