@@ -10,13 +10,13 @@ const usersController = new UsersController(userService);
 
 loginRoute.post(
   '/login',
-  validateLogin.validationFields,
+  validateLogin.validLogin,
   (req: Request, res: Response) => usersController.create(req, res),
 );
 
 loginRoute.get(
   '/login/role',
-  TokenAuthorization.verifyToken,
+  TokenAuthorization.verificationToken,
   (req: Request, res: Response) => usersController.getRole(req, res),
 );
 export default loginRoute;

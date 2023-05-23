@@ -1,7 +1,7 @@
 import { Request, Response, NextFunction } from 'express';
 
 export default class validateLogin {
-  public static validationFields(req: Request, res: Response, next: NextFunction) {
+  public static validLogin(req: Request, res: Response, next: NextFunction) {
     const { email, password } = req.body;
 
     if (!email || !password) {

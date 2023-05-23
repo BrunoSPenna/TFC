@@ -2,7 +2,7 @@ import { NextFunction, Request, Response } from 'express';
 import jwt = require('jsonwebtoken');
 
 export default class TokenAuthorization {
-  public static verifyToken(
+  public static verificationToken(
     req: Request,
     res: Response,
     next: NextFunction,
