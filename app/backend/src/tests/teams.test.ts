@@ -15,7 +15,7 @@ const { app } = new App();
 const { expect } = chai;
 
 const mockBody = {
-    email: 'xablau@gmail.com',
+    email: 'xablau@hotmail.com',
     password: 'xablau'
 }
 
